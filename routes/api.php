@@ -25,13 +25,4 @@ $router->group([
 
    // Matches "/api/users
    $router->get('users', 'UserController@allUsers');
-
-
-   //api connect Notion (i need create a controller to connect)
-   //list databases
-   $router->get("databases", 'NotionController@allDatabases');
-    //create databases
-   $router->post("databases", 'NotionController@createDatabases');
-    //create update dabatase (patch or put)
-   $router->put("databases", 'NotionController@updateDatabases');
 });
